@@ -1,40 +1,40 @@
-#projects img{
-    height: 300px;
-    width: 300px;
-    align-items: center;
+.header {
+    background-image: url("/images/background.svg");
+    background-repeat: no-repeat;
+    background-position:right;
+    backdrop-filter: 10;
+    background-size: cover;
+    font-weight: bolder;
+    text-align: start;
 }
-#projects p{
-    height: 100px;
+#project img {
+    height: 200px;
+    width: 200px;
 }
-.card {
-    align-items: center;
-    margin-top: 2em;
-    padding: 1.5em 0.5em 0.5em;
-    border-radius: 2em;
-    text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card .card-title {
-    font-weight: 700;
-    font-size: 1.5em;
-  }
-  .btn {
-    border-radius: 2em;
-    background-color: rgb(31, 61, 61);
-    color: #ffffff;
-    padding: 0.5em 1.5em;
-  }
-  .btn:hover {
-    background-color: rgba(0, 128, 128, 0.7);
-    color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-.photo{
-    align-items: center;
-    width: 50%;
-    padding-bottom: 200px;
-    height: 700px;
+.paragraph{
+    font-weight: bold;
+    font-style: italic;
 }
 
+#project p {
+    height: auto;
+}
 
+#portfolio{
+    background-color: #3E73B4;
+}
+p.thick {
+    font-weight: bold;
+  }
+
+.tombol {
+    background-color: #12471d80 ;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+
+.body{
+    background-color: #3E73B4;
+}
+.card{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
