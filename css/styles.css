@@ -117,14 +117,20 @@ body {
 }
 
 .card-img-top {
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-    transition: var(--transition);
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.08);
+    object-fit: contain;
+    max-height: 140px;
+    margin: 0 auto 1rem auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1);
 }
 
-.card:hover .card-img-top {
-    transform: scale(1.05);
+.card-img-top:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 6px 24px rgba(30, 64, 175, 0.15);
 }
 
 /* ===== PORTFOLIO SECTION ===== */
@@ -417,4 +423,83 @@ img {
 
 section {
     scroll-margin-top: 80px;
+}
+
+.project-logo {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.08);
+    object-fit: contain;
+    max-height: 140px;
+    margin: 0 auto 1rem auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+.project-logo:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 6px 24px rgba(30, 64, 175, 0.15);
+}
+
+/* Modern Portfolio Table */
+.portfolio-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.07);
+}
+.portfolio-table thead th {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.02rem;
+    border: none;
+    padding: 0.85rem 0.6rem;
+}
+.portfolio-table tbody tr {
+    transition: background 0.2s;
+}
+.portfolio-table tbody tr:nth-child(even) {
+    background: #f3f6fa;
+}
+.portfolio-table tbody tr:hover {
+    background: #e8f0fe;
+}
+.portfolio-table td, .portfolio-table th {
+    padding: 0.65rem 0.45rem;
+    border: none;
+    vertical-align: middle;
+}
+.portfolio-table .badge {
+    font-size: 0.93rem;
+    border-radius: 999px;
+    padding: 0.32em 0.8em;
+    font-weight: 500;
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: none;
+}
+.portfolio-table .btn.tombol.btn-sm {
+    padding: 0.38rem 0.9rem;
+    font-size: 0.93rem;
+    border-radius: 999px;
+}
+@media (max-width: 768px) {
+    .portfolio-table thead th, .portfolio-table td {
+        font-size: 0.89rem;
+        padding: 0.38rem 0.18rem;
+    }
+    .portfolio-table .badge {
+        font-size: 0.89rem;
+        padding: 0.22em 0.5em;
+    }
+    .portfolio-table .btn.tombol.btn-sm {
+        font-size: 0.89rem;
+        padding: 0.22rem 0.5rem;
+    }
 }
