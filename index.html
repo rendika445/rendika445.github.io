@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Rendika's Portfolio</title>
+</head>
 
-    <title>Rendika's website</title>
-
-<body class="body">
-
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top py-2">
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2">
         <div class="container">
-            <a href="" class="navbar-brand fw-bolder align-items-center">Rendika's Website</a>
+            <a href="" class="navbar-brand">Rendika's Website</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -23,96 +28,90 @@
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="/file/Rendika Ramadhan 2023.pdf" class="nav-link fw-bold"
-                            download="Rendika's CV 2023">Download My CV</a></li>
-                    <li class="nav-item"><a href="#project" class="nav-link fw-bold">Projects</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link fw-bold">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link fw-bold">Contact</a></li>
+                    <li class="nav-item"><a href="/file/Rendika Ramadhan 2023.pdf" class="nav-link"
+                            download="Rendika's CV 2023"><i class="bi bi-download me-1"></i>Download CV</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link"><i class="bi bi-code-square me-1"></i>Projects</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link"><i class="bi bi-briefcase me-1"></i>Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><i class="bi bi-envelope me-1"></i>Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--Header-->
-    <section class="header text-dark text-center text-sm-start pt-5 pb-5 pb-lg-0 mt-5">
+    <!-- ===== HEADER SECTION ===== -->
+    <section class="header text-center text-sm-start">
         <div class="container">
             <div class="d-flex align-items-center">
                 <div>
-                    <h1>Hi I'm Rendika Ramadhan</h1>
+                    <h1>Hi, I'm Rendika Ramadhan</h1>
                     <p class="paragraph lead">
-                        I'm interested in IT Engineering, Sofware Development,and Software Engineering
+                        A Technical Operations Specialist with expertise in Application Support, Production Support, Software Implementation, Application Maintenance, and Development
                     </p>
-                    <a href="#project" class="btn tombol btn btn-lg mb-5 text-light">See my project</a>
+                    <a href="#project" class="btn tombol btn-lg">
+                        <i class="bi bi-arrow-right-circle me-2"></i>Explore My Work
+                    </a>
                 </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="images/my photo.png" alt="header">
+                <img class="img-fluid w-50 d-none d-sm-block" src="images/my_photo2.jpeg" alt="Rendika Ramadhan" loading="eager" width="500" height="500">
             </div>
         </div>
     </section>
 
-    <!--Project-->
-    <section class="project p-1 m-3 align-items-center" id="project">
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="project p-5" id="project">
         <div class="container">
-            <h3 class="text-left m-4">Projects</h3>
+            <h2 class="text-center mb-5">Featured Projects</h2>
             <div class="row text-start g-4">
+                <!-- Project Card 1 -->
                 <div class="col-md">
-                    <div class="card bg-light text-dark border-1 align-items-center">
-                        <img src="/images/Abhimata Persada.jpg" class="p-5 card-img-top" alt="...">
+                    <div class="card bg-light text-dark">
+                        <img src="/images/Abhimata Persada.jpg" class="card-img-top" alt="Abhimata Persada" loading="lazy" width="400" height="200">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">PT. Abhimata Persada, Application
-                                Support Engineer</h5>
-                            <h6 class="card-title fw-bold">March 2019 – July 2022</h6>
+                            <h5 class="card-title fw-bold">PT. Abhimata Persada</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Application Support Engineer</h6>
                             <p class="card-text">
-                            <ul>
-                                <li>
-                                    Doing corrective, preventive action,
-                                    investigate cases reported from
-                                    operational team related to technical
-                                    things, and make report.
-                                </li>
-                                <li>
-                                    Make customized function system
-                                    from vanilla for client and make
-                                    automation report using Java and
-                                    Jasper Report.
-                                </li>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Corrective and preventive actions</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Technical case investigation</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Custom system development</li>
                             </ul>
                             </p>
-                            <a href="#portfolio" class="btn tombol btn btn-sm mb-5 text-light">See my portfolio</a>
+                            <a href="#portfolio" class="btn tombol btn-sm">View Details</a>
                         </div>
                     </div>
                 </div>
+                <!-- Project Card 2 -->
                 <div class="col-md">
-                    <div class="card bg-dark text-light border-0 align-items-center">
-                        <img src="/images/Qoala Indonesia.png" class="p-2 card-img-top" alt="...">
+                    <div class="card bg-dark text-light">
+                        <img src="/images/Qoala Indonesia.png" class="card-img-top" alt="Qoala Indonesia" loading="lazy" width="400" height="200">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Qoala Indonesia, Technical
-                                Operations Engineer</h5>
-
-                            <h6 class="card-title fw-bold">July 2022 – PRESENT</h6>
+                            <h5 class="card-title fw-bold">Qoala Indonesia</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Technical Operations Engineer</h6>
                             <p class="card-text">
-                            <ul>
-                                <li>Doing corrective, preventive action,
-                                    investigate cases reported from
-                                    operational team related to technical
-                                    things</li>
-                                <li>Collaborate with business, product and
-                                    engineer team to set the expectation
-                                    and action points for product and
-                                    business development.</li>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Technical operations management</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Cross-team collaboration</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Product development support</li>
                             </ul>
                             </p>
-                            <a href="#portfolio" class="btn tombol btn btn-sm mb-5 text-light">See my portfolio</a>
+                            <a href="#portfolio" class="btn tombol btn-sm">View Details</a>
                         </div>
                     </div>
                 </div>
+                <!-- Project Card 3 -->
                 <div class="col-md">
-                    <div class="card bg-light text-dark border-0 align-items-center">
-                        <img src="/images/portfolio.svg" class="p-2 card-img-top" alt="...">
+                    <div class="card bg-light text-dark">
+                        <img src="/images/portfolio.svg" class="card-img-top" alt="Personal Projects" loading="lazy" width="400" height="200">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">My Own Project</h5>
-                            <h6 class="card-title fw-bold">2018</h6>
-                            <p class="card-text">Creating Android Apps using andriod studio java base</p>
-                            <a href="#portfolio" class="btn tombol btn btn-sm mb-5 text-light">See my portfolio</a>
+                            <h5 class="card-title fw-bold">Personal Projects</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Android Development</h6>
+                            <p class="card-text">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Android Studio development</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Java-based applications</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Mobile UI/UX design</li>
+                            </ul>
+                            </p>
+                            <a href="#portfolio" class="btn tombol btn-sm">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -120,120 +119,162 @@
         </div>
     </section>
 
-    <!--Portfolio-->
-    <section class="portfolio p-5 align-content-center" id="portfolio">
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section class="portfolio p-5" id="portfolio">
         <div class="container">
-            <h3 class="text-left m-4">Portfolio</h3>
-            <table class="table text-dark">
-                <thead>
-                    <tr>
-                        <th scope="col">Company</th>
-                        <th scope="col">Project</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Tech Stack</th>
-                        <th scope="col">Github link</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Abhimata Persada</th>
-                        <td>Interal Sofware</td>
-                        <td>Creating web application with feature CRUD, Upload File and Download File.</td>
-                        <td>Java, Spring Boot, HTML,CSS, Bootstrap</td>
-                        <td><a type="button" class="tombol btn btn text-light btn-sm"
-                                href="https://rendika445.github.io/">See my project</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Abhimata Persada</th>
-                        <td>Treasury System Bank Indonesia</td>
-                        <td>Creating automation report for Treasury Operation team Bank Indonesia</td>
-                        <td>Java, Oracle RDBMS, Jasper Report</td>
-                        <td><a type="button" class="tombol btn btn text-light btn-sm"
-                                href="https://rendika445.github.io/">See my project</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Qoala Indonesia</th>
-                        <td>Technical Operation Engineer</td>
-                        <td>Creating tools for build Data manipulation language SQL</td>
-                        <td>Phyton, MySQL, Jupyter Notebook</td>
-                        <td><a type="button" class="tombol btn btn text-light btn-sm"
-                                href="https://rendika445.github.io/">See my project</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">My Own Project</th>
-                        <td>Aplikasi Ragam Budaya di Pulau Jawa</td>
-                        <td>Build Apps with Android Studio base java for my thesis.</td>
-                        <td>Android Studio, Java, Gradle</td>
-                        <td><a type="button" class="tombol btn btn text-light btn-sm"
-                                href="https://rendika445.github.io/">See my project</a></td>
-                    </tr>
-                    </tr>
-                </tbody>
-            </table>
+            <h2 class="text-center mb-5">Portfolio</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Project</th>
+                            <th>Description</th>
+                            <th>Tech Stack</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Portfolio Item 1 -->
+                        <tr>
+                            <td>Abhimata Persada</td>
+                            <td>Internal Software</td>
+                            <td>Web application with CRUD, file upload/download features</td>
+                            <td><span class="badge bg-primary me-1">Java</span><span class="badge bg-primary me-1">Spring Boot</span><span class="badge bg-primary">Bootstrap</span></td>
+                            <td><a href="https://rendika445.github.io/" class="btn tombol btn-sm">View Project</a></td>
+                        </tr>
+                        <!-- Portfolio Item 2 -->
+                        <tr>
+                            <td>Abhimata Persada</td>
+                            <td>Treasury System</td>
+                            <td>Automation report for Treasury Operation team</td>
+                            <td><span class="badge bg-primary me-1">Java</span><span class="badge bg-primary me-1">Oracle</span><span class="badge bg-primary">Jasper</span></td>
+                            <td><a href="https://rendika445.github.io/" class="btn tombol btn-sm">View Project</a></td>
+                        </tr>
+                        <!-- Portfolio Item 3 -->
+                        <tr>
+                            <td>Qoala Indonesia</td>
+                            <td>Technical Operations</td>
+                            <td>SQL data manipulation tools</td>
+                            <td><span class="badge bg-primary me-1">Python</span><span class="badge bg-primary me-1">MySQL</span><span class="badge bg-primary">Jupyter</span></td>
+                            <td><a href="https://rendika445.github.io/" class="btn tombol btn-sm">View Project</a></td>
+                        </tr>
+                        <!-- Portfolio Item 4 -->
+                        <tr>
+                            <td>Personal Project</td>
+                            <td>Javanese Culture App</td>
+                            <td>Android app for thesis project</td>
+                            <td><span class="badge bg-primary me-1">Android</span><span class="badge bg-primary me-1">Java</span><span class="badge bg-primary">Gradle</span></td>
+                            <td><a href="https://rendika445.github.io/" class="btn tombol btn-sm">View Project</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
-
-    <!--Contact-->
+    <!-- ===== CONTACT SECTION ===== -->
     <section class="contact p-5" id="contact">
         <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
             <div class="row g-4 align-items-center">
                 <div class="col-md">
-                    <h3 class="text-center mb-4">
-                        Contact Me
-                    </h3>
-                    <ul class="list-group list-group-flush lead">
-                        <li class="list-group-item">
-                            <i class="bi bi-geo-alt"></i>
-                            <span class="fw-bold">My Location :</span>
-                            <br>Kramat Jati, Jakarta Timur, 13530, DKI Jakarta.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="bi bi-telephone"></i>
-                            <span class="fw-bold">Mobile Phone:</span>
-                            <br>0812-1156-6207
-                        </li>
-                        <li class="list-group-item">
-                            <i class="bi bi-envelope-at"></i>
-                            <span class="fw-bold">Email:</span>
-                            <br>rendikaramadhan445@gmail.com
-                        </li>
-                        <li class="list-group-item">
-                            <i class="bi bi-linkedin"></i>
-                            <span class="fw-bold">LinkedIn:</span>
-                            <a href="https://www.linkedin.com/in/rendika-ramadhan-3801b0192">
-                                <br>Rendika Ramadhan
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="fw-bold">Location:</span>
+                                    <br>Kramat Jati, Jakarta Timur, 13530, DKI Jakarta
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <span class="fw-bold">Phone:</span>
+                                    <br>0812-1156-6207
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <span class="fw-bold">Email:</span>
+                                    <br>rendikaramadhan445@gmail.com
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span class="fw-bold">LinkedIn:</span>
+                                    <br>
+                                    <a href="https://www.linkedin.com/in/rendika-ramadhan-3801b0192" class="text-decoration-none">
+                                        Rendika Ramadhan
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md">
-                    <img class="img-fluid d-none d-lg-block" src="images/contact.svg" alt="contact">
+                    <img class="img-fluid d-none d-lg-block" src="images/contact.svg" alt="Contact" loading="lazy" width="400" height="400">
                 </div>
             </div>
         </div>
-
     </section>
-    <!--Portfolio-->
 
-
-    <footer class="p-3 bg-dark text-white text-center fw-bold position-relative">
+    <!-- ===== FOOTER ===== -->
+    <footer class="p-4">
         <div class="container">
-            <p class="lead fw-bolder">Jakarta, August 2023<br>https://rendika445.github.io/</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1 "></i>
-            </a>
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="copyright">
+                        <span class="copyright-text">© 2024 Rendika Ramadhan. All rights reserved.</span>
+                        <span class="separator">|</span>
+                        <span class="location">Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top -->
+            <button onclick="scrollToTop()" class="back-to-top" title="Back to Top">
+                <i class="bi bi-arrow-up-circle-fill"></i>
+            </button>
         </div>
     </footer>
 
+    <!-- ===== SCRIPTS ===== -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-</body>
-</head>
+    
+    <!-- Custom Scripts -->
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button based on scroll position
+        window.onscroll = function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        };
+    </script>
+</body>
 </html>
